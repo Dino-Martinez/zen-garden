@@ -26,12 +26,10 @@ div.page-wrapper {
     padding: 5rem;
     border-radius: 15px;
     background: var(--clr-bg);
+    margin-right: 20rem;
 }
 
 p, h1, h2, h3 {
-    margin: 0;
-    padding: .5em 0;
-    line-height: 1.6;
     position: relative;
     font-family: 'Oxygen', sans-serif;
 }
@@ -86,13 +84,18 @@ div:not(.summary) > p::before {
     background: var(--clr-secondary);
 }
 
+*[role="banner"] > h1 {
+  margin: 0;
+}
+
 *[role="article"] {
     margin: 1.5rem 0;
 }
 
 *[role="article"] > h3 {
     position: relative;
-    display: inline;
+    line-height: 2.5;
+    width: max-content;
     color: var(--clr-text-header);
 }
 
@@ -119,4 +122,45 @@ li > a {
 
 li > a:hover {
     color: var(--clr-text);
+}
+
+.sidebar > .wrapper {
+  position: fixed;
+  top: 5rem;
+  right: 0;
+  width: 20rem;
+  
+}
+
+.sidebar > .wrapper > div {
+  margin-top: 1.5rem;
+  border-radius: 15px 0 0 15px;
+  padding: 2em;
+  background: var(--clr-bg);
+}
+
+.sidebar > .wrapper > div > h3 {
+  margin-top: 0;
+  font-size: 1.5em;
+}
+
+.sidebar > .wrapper > div > h3::after {
+  content: '';
+  position: absolute;
+  bottom: -0.125em;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--clr-text);
+}
+
+footer > a {
+  text-decoration: none;
+  padding: .75em 1.5em;
+  border: 1px solid var(--clr-secondary);
+}
+
+footer > a:hover {
+  background: var(--clr-secondary);
+  color: var(--clr-text);
 }
