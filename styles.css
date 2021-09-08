@@ -154,6 +154,15 @@ li > a:hover {
   background: var(--clr-text);
 }
 
+footer {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 1rem;
+    place-items: center;
+    width: 50%;
+    margin: auto;
+}
+
 footer > a {
   text-decoration: none;
   padding: .75em 1.5em;
