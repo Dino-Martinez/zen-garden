@@ -1,0 +1,28 @@
+{
+  "name": "zen-garden",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "sass bulma.scss bulma.css",
+    "dev": "sass bulma.scss bulma.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dino-Martinez/zen-garden.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dino-Martinez/zen-garden/issues"
+  },
+  "homepage": "https://github.com/Dino-Martinez/zen-garden#readme",
+  "dependencies": {
+    "bulma": "^0.9.3"
+  },
+  "devDependencies": {
+    "sass": "^1.42.1"
+  }
+}
